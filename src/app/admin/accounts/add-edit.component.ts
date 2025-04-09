@@ -3,7 +3,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 
-import { AccountService, AlertService } from './_services';
+import { AccountService, AlertService } from '../../_services';
 import { MustMatch } from '../../_helpers/must-match.validator';
 
 @Component({ templateUrl: 'add-edit.component.html' })
