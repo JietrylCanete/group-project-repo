@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map, finalize } from 'rxjs/operators';
 
-import { environment } from '@environment/environment';
+import { environment } from '../../environment/environment';
 import { Account } from '../_models';
 
 const baseUrl = `${environment.apiUrl}/accounts`;
