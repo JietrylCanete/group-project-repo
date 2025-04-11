@@ -1,8 +1,10 @@
 {
   "dependencies": {
+    "@angular/cli": "^19.2.7",
     "@angular/forms": "^19.2.5",
     "@angular/platform-browser-dynamic": "^19.2.5",
     "@angular/router": "^19.2.5",
+    "checks": "^1.2.0",
     "json": "^11.0.0",
     "ng": "^0.0.0",
     "package": "^1.0.1",
@@ -12,10 +14,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ng serve",
+    "build": "ng build",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^19.2.7"
+  }
 }
