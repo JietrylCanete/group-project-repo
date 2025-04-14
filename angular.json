@@ -1,0 +1,40 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "74c7f225-c724-462a-9901-95400b006115"
+  },
+  "projects": {
+    "Dummy": {
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "outputPath": "dist/Dummy",
+            "polyfills": "src/polyfills.ts",
+            "scripts": [],
+            "styles": [
+              "src/styles.css"
+            ],
+            "tsConfig": "tsconfig.app.json"
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "Dummy:build"
+          }
+        }
+      },
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src"
+    }
+  },
+  "version": 1
+}
